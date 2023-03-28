@@ -19,7 +19,12 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+  },
+  v = {
+    ["J"] = ":move '>+1<CR>gv-gv",
+    ["K"] = ":move '<-2<CR>gv-gv",
+    ["p"] = { '"_dP"', desc = "Keep same clipboard when pasting" },
   },
   t = {
     -- setting a mapping to false will disable it
