@@ -25,7 +25,7 @@ return {
       opts.use_tresitter = false
       opts.show_first_indent_level = false
       opts.show_trailing_blankline_indent = false
-    end }
+    end },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
