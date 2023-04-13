@@ -20,6 +20,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["<C-t>"] = { "<cmd>ToggleTerm<cr>" }
   },
   v = {
     ["J"] = ":move '>+1<CR>gv-gv",
@@ -27,6 +28,7 @@ return {
     ["p"] = { '"_dP"', desc = "Keep same clipboard when pasting" },
   },
   t = {
+    ["<C-t>"] = { "<cmd>ToggleTerm<cr>" }
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
