@@ -20,7 +20,19 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
-    ["<C-t>"] = { "<cmd>ToggleTerm<cr>" }
+    ["<C-t>"] = { "<cmd>ToggleTerm<cr>" },
+    ["<leader>j"] = { name = "NvimIpy" },
+    ["<leader>jo"] = { "<cmd>IPython<cr>", desc = "Run IPython inside nvim" },
+    ["<leader>jp"] = { "<cmd>call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p<cr>",
+      desc = "Run python QTconsole" },
+
+    -- vim.cmd([[
+    -- command! -nargs=0 RunQtConsole
+    -- \ call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p
+    -- ]])
+    -- ["<leader>jk"] = { "<cmd>IPython --existing --no-window<cr>", desc = "Connect to existing kernel" },
+    -- ["<leader>jc"] = { "<Plug>(IPy-RunCell)", desc = "Run current cell" },
+    -- ["<leader>ja"] = { "<Plug>(IPy-RunAll)", desc = "Run all cells" },
   },
   v = {
     ["J"] = ":move '>+1<CR>gv-gv",

@@ -7,6 +7,15 @@ return {
       vim.g.gruvbox_theme = { Conceal = { fg = "#d4be98" } }
     end,
   },
+  { "bfredl/nvim-ipy",
+    -- event = "BufEnter *.py"
+    keys = {
+      { "<leader>jk", "<cmd>IPython --existing --no-window<cr>", desc = "Connect to existing kernel" },
+      { "<leader>jc", "<Plug>(IPy-RunCell)", desc = "Run current cell" },
+      { "<leader>ja", "<Plug>(IPy-RunAll)", desc = "Run all cells" },
+    }
+    -- cmd = "IPyConnect"
+  },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
