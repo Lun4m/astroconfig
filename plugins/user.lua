@@ -1,5 +1,6 @@
 return {
-  { "eddyekofo94/gruvbox-flat.nvim",
+  {
+    "eddyekofo94/gruvbox-flat.nvim",
     init = function()
       vim.g.gruvbox_transparent = true
       vim.g.gruvbox_italic_functions = true
@@ -7,12 +8,16 @@ return {
       vim.g.gruvbox_theme = { Conceal = { fg = "#d4be98" } }
     end,
   },
-  { "bfredl/nvim-ipy",
+  {
+    "arturgoms/moonbow.nvim"
+  },
+  {
+    "bfredl/nvim-ipy",
     -- event = "BufEnter *.py"
     keys = {
       { "<leader>jk", "<cmd>IPython --existing --no-window<cr>", desc = "Connect to existing kernel" },
-      { "<leader>jc", "<Plug>(IPy-RunCell)", desc = "Run current cell" },
-      { "<leader>ja", "<Plug>(IPy-RunAll)", desc = "Run all cells" },
+      { "<leader>jc", "<Plug>(IPy-RunCell)",                     desc = "Run current cell" },
+      { "<leader>ja", "<Plug>(IPy-RunAll)",                      desc = "Run all cells" },
     }
     -- cmd = "IPyConnect"
   },
