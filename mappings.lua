@@ -11,10 +11,15 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
+          require("astronvim.utils.buffer").close(
+            bufnr)
+        end)
       end,
       desc = "Pick to close",
     },
+    ["<leader>gj"] = { "<cmd>lua require 'gitsigns'.next_hunk({navigation_message = false})<cr>", desc = "Next Hunk" },
+    ["<leader>gk"] = { "<cmd>lua require 'gitsigns'.prev_hunk({navigation_message = false})<cr>", desc = "Prev Hunk" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -23,7 +28,8 @@ return {
     ["<C-t>"] = { "<cmd>ToggleTerm<cr>" },
     ["<leader>j"] = { name = "NvimIpy" },
     ["<leader>jo"] = { "<cmd>IPython<cr>", desc = "Run IPython inside nvim" },
-    ["<leader>jp"] = { "<cmd>call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p<cr>",
+    ["<leader>jp"] = {
+      "<cmd>call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p<cr>",
       desc = "Run python QTconsole" },
 
     -- vim.cmd([[
