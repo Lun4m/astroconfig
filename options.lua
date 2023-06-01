@@ -9,6 +9,7 @@ return {
     wrap = false,          -- sets vim.opt.wrap
     termguicolors = true,
     cursorlineopt = "number",
+    autochdir = true,
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
