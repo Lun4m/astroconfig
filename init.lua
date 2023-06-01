@@ -16,6 +16,7 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
+
   -- Set colorscheme to use
   -- colorscheme = "gruvbox",
   colorscheme = "gruvbox-flat",
@@ -24,6 +25,7 @@ return {
       StatusLine = { fg = "#ebdbb2", bg = "#504945" },
     },
   },
+
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
