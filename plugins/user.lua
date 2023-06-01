@@ -21,6 +21,17 @@ return {
     }
     -- cmd = "IPyConnect"
   },
+  {
+    'lervag/vimtex',
+    init = function()
+      vim.g.vimtex_compiler_method = "latexmk"
+      -- vim.g.vimtex_view_method = "general"
+      vim.g.vimtex_view_method = "zathura"
+      vim.g.vimtex_quickfix_mode = 0
+      vim.g.vimtex_view_forward_search_on_start = 0
+    end,
+    event = "BufRead",
+  },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
