@@ -6,7 +6,6 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.everforest" },
-  -- { import = "astrocommunity.colorscheme.gruvbox" },
   -- { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.nightfox" },
   -- { import = "astrocommunity.colorscheme.onigiri" },
@@ -15,4 +14,12 @@ return {
   -- { import = "astrocommunity.colorscheme.tokyonight" },
   -- { import = "astrocommunity.colorscheme.kanagawa" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.colorscheme.gruvbox" },
+  {
+    "gruvbox.nvim",
+    opts = {
+      -- contrast = "soft",
+      transparent_mode = true,
+    }
+  }
 }
