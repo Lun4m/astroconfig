@@ -36,6 +36,12 @@ return {
     end,
     ft = { "tex", "bib" }
   },
+  {
+    "ggandor/leap.nvim",
+    init = function()
+      require('leap').add_default_mappings()
+    end
+  }
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
