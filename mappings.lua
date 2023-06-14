@@ -44,6 +44,8 @@ return {
     ["J"] = ":move '>+1<CR>gv-gv",
     ["K"] = ":move '<-2<CR>gv-gv",
     ["p"] = { '"_dP"', desc = "Keep same clipboard when pasting" },
+    [">"] = ">gv",
+    ["<"] = "<gv",
   },
   t = {
     ["<C-t>"] = { "<cmd>ToggleTerm<cr>" }
