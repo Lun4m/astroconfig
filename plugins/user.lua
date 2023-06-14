@@ -24,7 +24,7 @@ return {
   {
     'lervag/vimtex',
     config = function()
-      vim.o.textwidth = 100
+      vim.o.textwidth = 80
       vim.o.wrap = true
       vim.o.conceallevel = 2
       vim.o.cmdheight = 1
@@ -34,7 +34,6 @@ return {
       vim.g.vimtex_quickfix_mode = 0
       vim.g.vimtex_view_forward_search_on_start = 0
     end,
-    -- event = "BufRead",
     ft = { "tex", "bib" }
   },
   -- You can also add new plugins here as well:
