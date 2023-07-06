@@ -23,18 +23,15 @@ return {
   },
   {
     'lervag/vimtex',
+    lazy = false,
     config = function()
-      vim.o.textwidth = 80
-      vim.o.wrap = true
-      vim.o.conceallevel = 2
-      vim.o.cmdheight = 1
       vim.g.vimtex_compiler_method = "latexmk"
       -- vim.g.vimtex_view_method = "general"
-      vim.g.vimtex_view_method = "zathura"
+      vim.g.vimtex_view_method = "zathura_simple"
       vim.g.vimtex_quickfix_mode = 0
       vim.g.vimtex_view_forward_search_on_start = 0
     end,
-    ft = { "tex", "bib" }
+    -- ft = { "tex", "bib" }
   },
   {
     "ggandor/leap.nvim",

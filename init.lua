@@ -72,6 +72,18 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
+    vim.api.nvim_create_autocmd(
+      { "BufRead", "BufNewFile" },
+      {
+        pattern = { "*.tex", "*.bib" },
+        callback = function()
+          vim.o.textwidth = 80
+          vim.o.wrap = true
+          vim.o.conceallevel = 2
+          vim.o.cmdheight = 1
+        end
+      }
+    )
     -- vim.filetype.add {
     --   extension = {
     --     foo = "fooscript",

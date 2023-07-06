@@ -32,6 +32,8 @@ return {
       "<cmd>call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p<cr>",
       desc = "Run python QTconsole" },
 
+    ["\\"] = { "<localleader>" },
+
     -- vim.cmd([[
     -- command! -nargs=0 RunQtConsole
     -- \ call jobstart('jupyter qtconsole --JupyterWidget.include_other_output=True --JupyterQtConsoleApp.hide_menubar=True') | :wincmd p
@@ -46,6 +48,7 @@ return {
     ["p"] = { '"_dP"', desc = "Keep same clipboard when pasting" },
     [">"] = ">gv",
     ["<"] = "<gv",
+    ["x"] = "x",
   },
   t = {
     ["<C-t>"] = { "<cmd>ToggleTerm<cr>" }
