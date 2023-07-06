@@ -16,8 +16,8 @@ return {
     -- event = "BufEnter *.py"
     keys = {
       { "<leader>jk", "<cmd>IPython --existing --no-window<cr>", desc = "Connect to existing kernel" },
-      { "<leader>jc", "<Plug>(IPy-RunCell)",                     desc = "Run current cell" },
-      { "<leader>ja", "<Plug>(IPy-RunAll)",                      desc = "Run all cells" },
+      { "<leader>jc", "<Plug>(IPy-RunCell)<cr>",                 desc = "Run current cell" },
+      { "<leader>ja", "<Plug>(IPy-RunAll)<cr>",                  desc = "Run all cells" },
     }
     -- cmd = "IPyConnect"
   },
