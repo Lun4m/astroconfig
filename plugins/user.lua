@@ -1,12 +1,16 @@
 return {
   {
-    "eddyekofo94/gruvbox-flat.nvim",
-    init = function()
-      vim.g.gruvbox_transparent = true
-      vim.g.gruvbox_italic_functions = true
-      vim.g.gruvbox_flat_style = "dark"
-      vim.g.gruvbox_theme = { Conceal = { fg = "#d4be98" } }
-    end,
+    -- "eddyekofo94/gruvbox-flat.nvim",
+    "jgottzen/gruvbox-flat.nvim",
+    opts = {
+      style = "dark",
+      transparent = true,
+      italics = {
+        functions = true
+      },
+      theme = { Conceal = { fg = "#d4be98" } },
+    },
+    priority = 1000
   },
   {
     "arturgoms/moonbow.nvim"

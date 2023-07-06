@@ -19,12 +19,14 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "gruvbox",
+
   colorscheme = "gruvbox-flat",
-  highlights = {
-    gruvbox = {
-      StatusLine = { fg = "#ebdbb2", bg = "#504945" },
-    },
-  },
+  -- colorscheme = "gruvbox",
+  -- highlights = {
+  --   gruvbox = {
+  --     StatusLine = { fg = "#ebdbb2", bg = "#504945" },
+  --   },
+  -- },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
